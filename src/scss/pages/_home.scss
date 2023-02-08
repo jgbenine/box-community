@@ -161,3 +161,11 @@
         }
     }
 }
+
+.content-feed{
+    &__card{
+        max-width: 1000%;
+        height: 50px;
+        border: 1px solid yellow;
+    }
+}
