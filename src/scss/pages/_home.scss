@@ -75,7 +75,7 @@
         display: flex;
         flex-wrap: wrap;
         grid-row-gap: 20px;
-        grid-column-gap: 20px;
+        grid-column-gap: 15px;
     }
     .content-download-item {
         padding: 10px;
@@ -166,7 +166,7 @@
     padding: 20px 0px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:15px;
     .content-feed-card{
         display: flex;
         justify-content: space-between;
