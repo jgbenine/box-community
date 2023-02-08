@@ -163,9 +163,44 @@
 }
 
 .content-feed{
-    &__card{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .content-feed-card{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
         max-width: 1000%;
-        height: 50px;
-        border: 1px solid yellow;
+        border: 1px solid #d6d6d646;
+        border-radius: 3px;
+
+        h4{
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            }
+
+            p{
+                padding: 5px 0px;
+                font-size: 0.8rem;
+                line-height: 1rem;
+                opacity: 0.7;
+            }
+
+            &__intro{
+                max-width: 250px;
+            }
+
+            &__info{
+                border-left: 1px solid #d6d6d646;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 10px;
+
+               
+            }
+        }
     }
-}
