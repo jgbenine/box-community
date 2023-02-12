@@ -7,35 +7,56 @@
     height: 40px;
     color: $yellow-default;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     max-width: 250px;
     width: 100%;
+
+    @media (min-width: $md) {
+      gap: 10px;
+    }
     img {
       width: 100%;
       max-width: 50px;
       height: 100%;
-      max-height: 40px;
+      max-height: 30px;
+
+      @media (min-width: $md) {
+        max-height: 40px;
+      }
     }
     p {
+      display: none;
       word-wrap: normal;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       letter-spacing: 0.1rem;
       max-width: 100%;
       width: 100%;
+
+      @media (min-width: $sm) {
+        display: flex;
+      }
+
+      @media (min-width: $md) {
+        font-size: 1.4rem;
+      }
     }
   }
   &__search {
+    display: none;
     width: 100%;
     max-width: 400px;
     font-size: 0.8rem;
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 5px;
     border-radius: 3px;
     padding: 0px 10px 3px 10px;
+
+    @media (min-width: $sm) {
+      display: flex;
+    }
 
     @media (min-width: $md) {
       border: 1px solid $yellow-default;
