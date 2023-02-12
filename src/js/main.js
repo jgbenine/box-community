@@ -1,6 +1,9 @@
 import TabNav from './modules/tab-navegation';
 import Modal from './modules/modal';
 import FileEdit from './modules/file-size-check';
+import Search from './modules/search';
+
+
 
 
 const tabNav = new TabNav('.nav-options > li', '.content-support > section')
