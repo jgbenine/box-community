@@ -19,8 +19,12 @@
     display: flex;
     background: $dark-main;
     color: $yellow-default;
-    padding: 35px;
+    padding: 35px 20px;
     // height: 100%;
+
+    @media (min-width: $sm) {
+      padding: 35px;
+    }
 
     @media (min-width: $md) {
       padding: 25px;
@@ -71,9 +75,13 @@
   }
   .content-support {
     background: $dark-gray;
-    padding: 40px 50px;
+    padding: 40px 20px;
     color: $gray-default;
     width: 100%;
+
+    @media (min-width: $sm) {
+      padding: 40px 50px;
+    }
     section {
       display: none;
     }
