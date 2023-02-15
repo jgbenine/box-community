@@ -2,8 +2,13 @@
     // height: 100vw;
   &__grid {
     display: flex;
+    flex-direction: column;
     max-width: 100%;
     height: 100%;
+
+    @media (min-width: $sm) {
+      flex-direction: row;
+    }
 
     @media (min-width: $lg) {
       display: grid;
@@ -11,14 +16,18 @@
     }
   }
   &__navbar {
-    display: none;
+    display: flex;
     background: $dark-main;
     color: $yellow-default;
-    padding: 50px 35px 0px 50px;
-    height: 100%;
+    padding: 35px;
+    // height: 100%;
 
     @media (min-width: $md) {
-      display: flex;
+      padding: 25px;
+    }
+
+    @media (min-width: $lg) {
+      padding: 50px 35px 0px 50px;
     }
     ul {
       list-style: none;
@@ -33,6 +42,10 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @media (min-width: $md) {
+      display: flex;
+    }
     li {
       font-size: 0.9rem;
       text-transform: uppercase;
